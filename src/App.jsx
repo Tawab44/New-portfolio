@@ -1,10 +1,16 @@
+import Navbar from "./components/Navbar"
+
 function App() {
   return (
-    <div>
-      <h1>Tawab Shaikh</h1>
-      <p>Software Developer</p>
-    </div>
-  );
+    <>
+      <Navbar />
+
+      <main>
+        <h1>Tawab Portfolio</h1>
+        <p>Software Developer</p>
+      </main>
+    </>
+  )
 }
 
-export default App;
+export default App
