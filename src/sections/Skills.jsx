@@ -21,8 +21,10 @@ import {
 } from "react-icons/si"
 
 import SkillCard from "../components/SkillCard"
+import Reveal from "../components/Reveal"
 
 function Skills() {
+  
   const skillGroups = [
     {
       title: "Languages",
@@ -82,6 +84,7 @@ function Skills() {
   ]
 
   return (
+    <Reveal>
     <section
       id="skills"
       className="bg-[#0a0a0a] text-white px-6 py-32"
@@ -123,7 +126,7 @@ function Skills() {
         </div>
 
       </div>
-    </section>
+    </section></Reveal>
   )
 }
 

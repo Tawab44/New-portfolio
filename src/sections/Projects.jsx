@@ -1,8 +1,10 @@
 import projects from "../data/projects"
 import ProjectCard from "../components/ProjectCard"
+import Reveal from "../components/Reveal"
 
 function Projects() {
   return (
+    <Reveal>
     <section
       id="projects"
       className="bg-[#0a0a0a] text-white px-6 py-32"
@@ -30,7 +32,7 @@ function Projects() {
         </div>
 
       </div>
-    </section>
+    </section></Reveal>
   )
 }
 

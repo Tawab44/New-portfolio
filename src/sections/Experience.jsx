@@ -1,5 +1,8 @@
+import Reveal from "../components/Reveal"
+
 function Experience() {
   return (
+    <Reveal>
     <section
       id="experience"
       className="bg-[#0a0a0a] text-white px-6 py-32"
@@ -53,7 +56,7 @@ function Experience() {
         </div>
 
       </div>
-    </section>
+    </section></Reveal>
   )
 }
 

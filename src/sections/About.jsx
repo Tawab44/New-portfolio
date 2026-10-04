@@ -1,9 +1,13 @@
+import Reveal from "../components/Reveal"
+
 function About() {
   return (
+    <Reveal>
     <section
       id="about"
       className="bg-[#0a0a0a] text-white px-6 py-32"
     >
+      
       <div className="max-w-6xl mx-auto">
 
         <div className="max-w-3xl">
@@ -21,7 +25,6 @@ function About() {
             developer interested in building modern web applications
             and AI-powered solutions.
           </p>
-
           <p className="mt-5 text-lg text-zinc-400 leading-relaxed">
             I enjoy turning ideas into practical products with clean
             interfaces, thoughtful user experiences, and reliable
@@ -63,6 +66,8 @@ function About() {
 
       </div>
     </section>
+     </Reveal>
+
   )
 }
 
