@@ -2,6 +2,9 @@ import projects from "../data/projects"
 import ProjectCard from "../components/ProjectCard"
 import Reveal from "../components/Reveal"
 
+
+
+
 function Projects() {
   return (
     <Reveal>

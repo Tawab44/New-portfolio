@@ -4,15 +4,25 @@ function ProjectCard({ project, number }) {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 
-        {/* Project number */}
+        {/* Number */}
         <div className="md:col-span-1">
           <span className="text-sm text-zinc-600">
             {number}
           </span>
         </div>
 
-        {/* Project information */}
+        {/* Project */}
         <div className="md:col-span-8">
+
+          {project.image && (
+            <div className="mb-8 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+              <img
+                src={project.image}
+                alt={`${project.title} project preview`}
+                className="w-full aspect-video object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              />
+            </div>
+          )}
 
           <h3 className="text-3xl md:text-4xl font-semibold tracking-tight group-hover:text-blue-400 transition-colors">
             {project.title}
@@ -22,9 +32,7 @@ function ProjectCard({ project, number }) {
             {project.description}
           </p>
 
-          {/* Technologies */}
           <div className="mt-6 flex flex-wrap gap-2">
-
             {project.technologies.map((technology) => (
               <span
                 key={technology}
@@ -33,7 +41,6 @@ function ProjectCard({ project, number }) {
                 {technology}
               </span>
             ))}
-
           </div>
 
         </div>
@@ -48,7 +55,7 @@ function ProjectCard({ project, number }) {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-zinc-400 hover:text-white transition-colors"
+                className="text-sm text-zinc-400 hover:text-white"
               >
                 Live Demo ↗
               </a>
@@ -59,7 +66,7 @@ function ProjectCard({ project, number }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-zinc-400 hover:text-white transition-colors"
+                className="text-sm text-zinc-400 hover:text-white"
               >
                 GitHub ↗
               </a>
